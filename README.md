@@ -31,6 +31,7 @@ SDK 适用场景：用于 iOS 原生 App
 | `libicucore.tbd` | 数据压缩 |
 
 <font color=red>非IDFA版本可去除AdSupport.framework</font>
+
 <img src="http://imguserradar.analysys.cn/fangzhou/img/2018/08/201808281741466579.jpg" width="600" align=center />
 
 * `Targets` - “项目名称” - `Build Settings` - `Other Linker Flags`，添加`-ObjC`选项<font color=red>（注意大小写）</font>
