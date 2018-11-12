@@ -25,12 +25,12 @@ SDK 适用场景：用于 iOS 原生 App
 | 类库 | 用途 |
 | --- | --- |
 | `AnalysysAgent.framework` | 易观类库 |
-| `AdSupport.framework` |  获取广告标识|
 | `CoreTelephony.framework` | 获取运营商标识 |
 | `SystemConfiguration.framework` | 获取当前网络状态  |
 | `libz.tbd` | 数据压缩（Xcode7以下:libz.dylib） |
 | `libicucore.tbd` | 数据压缩 |
 
+<font color=red>非IDFA版本可去除AdSupport.framework</font>
 <img src="http://imguserradar.analysys.cn/fangzhou/img/2018/08/201808281741466579.jpg" width="600" align=center />
 
 * `Targets` - “项目名称” - `Build Settings` - `Other Linker Flags`，添加`-ObjC`选项<font color=red>（注意大小写）</font>
