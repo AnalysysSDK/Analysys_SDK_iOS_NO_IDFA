@@ -32,8 +32,8 @@
 		178B22902085BF7B00425E4D /* EGTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 178B228A2085BF7B00425E4D /* EGTextField.m */; };
 		178B22972085BF8200425E4D /* UIView+MGO.m in Sources */ = {isa = PBXBuildFile; fileRef = 178B22912085BF8100425E4D /* UIView+MGO.m */; };
 		178B22982085BF8200425E4D /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178B22932085BF8100425E4D /* NextViewController.m */; };
-		179867FD2199240F00632D3E /* AnalysysAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179867FC2199240F00632D3E /* AnalysysAgent.framework */; };
 		179868002199241D00632D3E /* AnalysysAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179867FF2199241D00632D3E /* AnalysysAgent.framework */; };
+		17D2051D21D1E2C1008CA916 /* AnalysysAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D2051C21D1E2C1008CA916 /* AnalysysAgent.framework */; };
 		E81E987920FDBF060063FAA1 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1709D2F620A0415300F3C61E /* libicucore.tbd */; };
 		E8B2C01621070F2A00CAC239 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B2C01521070F2A00CAC239 /* libz.tbd */; };
 		E8B2C01821070F3600CAC239 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B2C01721070F3600CAC239 /* AdSupport.framework */; };
@@ -96,8 +96,8 @@
 		178B22922085BF8100425E4D /* UIView+MGO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MGO.h"; sourceTree = "<group>"; };
 		178B22932085BF8100425E4D /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		178B22962085BF8100425E4D /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
-		179867FC2199240F00632D3E /* AnalysysAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnalysysAgent.framework; sourceTree = "<group>"; };
 		179867FF2199241D00632D3E /* AnalysysAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnalysysAgent.framework; sourceTree = "<group>"; };
+		17D2051C21D1E2C1008CA916 /* AnalysysAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnalysysAgent.framework; sourceTree = SOURCE_ROOT; };
 		E8B2C01521070F2A00CAC239 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E8B2C01721070F3600CAC239 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E8B2C01921070F3E00CAC239 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -134,7 +134,7 @@
 			files = (
 				E8BE05E6212D514100DFFFC3 /* WebKit.framework in Frameworks */,
 				E8B2C02021070F8500CAC239 /* AdSupport.framework in Frameworks */,
-				179867FD2199240F00632D3E /* AnalysysAgent.framework in Frameworks */,
+				17D2051D21D1E2C1008CA916 /* AnalysysAgent.framework in Frameworks */,
 				E8B2C01F21070F7900CAC239 /* SystemConfiguration.framework in Frameworks */,
 				E8B2C01D21070F7000CAC239 /* CoreTelephony.framework in Frameworks */,
 				E8B2C01E21070F7400CAC239 /* libz.tbd in Frameworks */,
@@ -198,7 +198,7 @@
 		178B22592085BE5F00425E4D /* AnalysysDemo */ = {
 			isa = PBXGroup;
 			children = (
-				179867F9219923F900632D3E /* NO_IDFA */,
+				17D2051C21D1E2C1008CA916 /* AnalysysAgent.framework */,
 				E8BE05AA212D501D00DFFFC3 /* Hybrid */,
 				178B225A2085BE5F00425E4D /* AppDelegate.h */,
 				178B225B2085BE5F00425E4D /* AppDelegate.m */,
@@ -242,14 +242,6 @@
 				178B22862085BF7A00425E4D /* UIView+KeyboardAnimation.m */,
 			);
 			path = HRKeyboardAnimation;
-			sourceTree = "<group>";
-		};
-		179867F9219923F900632D3E /* NO_IDFA */ = {
-			isa = PBXGroup;
-			children = (
-				179867FC2199240F00632D3E /* AnalysysAgent.framework */,
-			);
-			path = NO_IDFA;
 			sourceTree = "<group>";
 		};
 		179867FE2199241D00632D3E /* NO_IDFA */ = {
@@ -655,6 +647,7 @@
 					"$(PROJECT_DIR)/AnalysysDemo",
 					"$(PROJECT_DIR)/AnalysysDemo/IDFA",
 					"$(PROJECT_DIR)/AnalysysDemo/NO_IDFA",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/AnalysysDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -680,6 +673,7 @@
 					"$(PROJECT_DIR)/AnalysysDemo",
 					"$(PROJECT_DIR)/AnalysysDemo/IDFA",
 					"$(PROJECT_DIR)/AnalysysDemo/NO_IDFA",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/AnalysysDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
